@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Shopping with Seema</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 5000px;
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-transform: 2s;
+        }
+
+        header {
+            background: linear-gradient(to right, #7c1ade, #38ef7d);
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #5710db;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #f3f4f6;
+        }
+
+        #products {
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .product {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .product p {
+            color: #666666;
+            margin-bottom: 0.5rem;
+        }
+
+        .product button {
+            background: linear-gradient(to right, #11998e, #38ef7d);
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+
+        .product button:hover {
+            background: linear-gradient(to right, #0c8976, #30c270);
+        }
+
+        #cart {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        #cart h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .cart-item button {
+            background: linear-gradient(to right, #ff4d4f, #ff6382);
+            color: #ffffff;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+
+        .cart-item button:hover {
+            background: linear-gradient(to right, #e63c3f, #f34d6f);
+        }
+
+        .quantity {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity button {
+            background: linear-gradient(to right, #11998e, #38ef7d);
+            color: #ffffff;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+
+        .quantity button:hover {
+            background: linear-gradient(to right, #0c8976, #30c270);
+        }
+
+        .quantity input {
+            width: 40px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 0 0.5rem;
+            padding: 4px;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Shopping Website</h1>
+            <nav>
+                <ul>
+                    <button><li><a href="#about">Home</a></li></button>
+                    <button> <li><a href="product.html">Products</a></li></button>
+                    <button><li><a href="product.html">Cart</a></li></button>
+                    <button><li><a href="contact.html">Contact</a></li></button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <section>
+    <!DOCTYPE html>
+<html>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+    
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 3;
+      min-width: 100%; 
+      min-height: 50%;
+      margin: top 2px;
+    }
+    
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(65, 39, 228, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <video autoplay muted loop id="myVideo">
+      <source src="Pink & Blue Futuristic Gaming Channel Youtube Intro.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="content">
+      <h1>Shopping With Seema</h1>
+      <p>Welcome To My Shopping Cart Website I'm Creating a New Website Now You can Shop here.And Share Your Experience and Rating here</p>
+      <button id="myBtn" onclick="myFunction('https://www.flipkart.com/')">Shop Now</button>
+    </div>
+    
+    <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    
+    </body>
+    </html>
+
+    
